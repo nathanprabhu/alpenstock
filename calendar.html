@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/logo-fav.png">
+    <title>Thatha</title>
+    <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/material-design-icons/css/material-design-iconic-font.min.css"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="assets/lib/jquery.fullcalendar/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+  </head>
+ <body>
+    <div class="be-wrapper be-fixed-sidebar">
+      <nav class="navbar navbar-default navbar-fixed-top be-top-header">
+        <div class="container-fluid">
+          <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div>
+          <div class="be-right-navbar">
+            <div class="page-title"><span>Preventive Healthcare and Prediction</span></div>
+            <ul class="nav navbar-nav navbar-right be-icons-nav">
+              <li class="dropdown"><a href="#" role="button" aria-expanded="false" class="be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="be-left-sidebar">
+        <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">Dashboard</a>
+          <div class="left-sidebar-spacer">
+            <div class="left-sidebar-scroll">
+              <div class="left-sidebar-content">
+                <ul class="sidebar-elements">
+                  <li class="divider">Menu</li>
+                  <li ><a href="index.html"><i class="icon mdi mdi-home"></i><span>Home</span></a>
+                  </li>
+                  <li ><a href="index.html"><i class="icon mdi mdi-dot-circle"></i><span>Current Outbreak</span></a>
+                  </li>
+                  <li ><a href="index.html"><i class="icon mdi mdi-view-web"></i><span>Future Trend</span></a>
+                  </li>
+                  <li ><a href="index.html"><i class="icon mdi mdi-layers"></i><span>Prevent Outbreak</span></a>
+                  </li>
+                  <li class="active"><a href="calendar.html"><i class="icon mdi mdi-border-all"></i><span>Calendar</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="be-content">
+        <div class="page-head">
+          <h2 class="page-head-title">Calendar</h2>
+          <ol class="breadcrumb page-head-nav">
+            <li><a href="#">Home</a></li>
+            <li class="active">Calendar</li>
+          </ol>
+        </div>
+        <div class="main-content container-fluid">
+          <div class="row full-calendar">
+            <div class="col-md-9">
+              <div class="panel panel-default panel-fullcalendar">
+                <div class="panel-body">
+                  <div id="calendar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="panel panel-default fullcalendar-external-events">
+                <div class="panel-heading panel-heading-divider">Schedule Awareness Programs</div>
+                <div class="panel-body">
+                  <div id="external-events">
+                    <div class="fc-event">Prevent Flu Outbreak</div>
+                    <div class="fc-event">Prevent Pneumonia</div>
+                    <div class="fc-event">Prevent Cholera</div>
+                    <div class="fc-event">Prevent Plague</div>
+                    <div class="fc-event">Prevent ubonic PLague</div>
+                    <p>
+                      <input id="drop-remove" type="checkbox">
+                      <label for="drop-remove">Non Recurring program</label>
+                    </p>
+                    <a align="center" class="btn btn-space btn-success" href="sms_send.php">Schedule Event</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/lib/moment.js/min/moment.min.js" type="text/javascript"></script>
+    <script src="assets/lib/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/lib/jquery.fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	//initialize the javascript
+      	App.init();
+      	App.pageCalendar();
+      });
+    </script>
+  </body>
+</html>
